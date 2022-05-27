@@ -1,6 +1,59 @@
-# Getting Started with Create React App
+# React Web Store Admin
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hi reader,
+
+I have created this repository because I have been developing web stores for the past 3 years.
+I've never found a great NPM package for running a store utilizing React.
+I know there are propably a million other tools for creating a webstore but I wanted to create one
+that can be integrated with any stack.
+
+A single package that provides you a database to store your items, an analytics dashboard and a one stop shop for your webstore.
+
+The idea is to have a shippable NPM package for a store, an admin portal with analytics showing you which products are the best sellers,
+integration with major website like Amazon, Ebay, FB marketplace so you can push out products to all of your channels at the same time.
+Keep track of your inventory and see reviews on your products from several different sources.
+
+This sounds like a lot, therefor I want to start with a simple responsive and integrable NPM package for React user to build out there one stop shop
+Start conquering the ecommerce world with React.
+
+# Access
+
+If you would like access to contribute to this repository please join the discord channel [RWS](https://discord.gg/NAZzpTDq) and
+I will add you to the contributors list as soon as possible.
+
+# Trello Board
+
+I have created a Trello board with a backlog [here](https://trello.com/b/o1ygQeAq/responsive-web-store)
+To get access please join the Discord channel [RWS](https://discord.gg/NAZzpTDq)
+
+After that you can pick up any tickets and start working on them.
+
+# Working on the project
+
+To get started you will have to clone the repo to your local machine.
+
+I have setup the project so that we are unable to merge into master directly.
+If you want to contribute you will have to create a new branch.
+We are using trunk based development methodology which uses git rebase which reapplies your commits onto the master branch.
+This way we iterate with small changes to the repository securing the codebase.
+
+if you want to read more about trunk based development, [here](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development#:~:text=What%20is%20trunk%2Dbased%20development,streamlines%20merging%20and%20integration%20phases.) is an article explaining it in depth
+
+I've utilized styled-components for the CSS, this makes it easier to integrate JavaScript into our CSS.
+It makes it more secure since the classnames will be auto generated and we can reuse components easier.
+
+The file structure is as follows:
+
+```
+Components -- ComponentName -- index.js
+                            -- styles.js
+```
+
+Please stick to the convention to have to codebase be as holistic as possible.
+
+We have a Utils folder which is used for Hooks.
+If you feel like any code is being reused anywhere to many times we can create a hook for it to keep our codebase DRY
+The same goes for CSS code, we have a folder named Styles that is utilized for the purpose of reusable CSS code.
 
 ## Available Scripts
 
