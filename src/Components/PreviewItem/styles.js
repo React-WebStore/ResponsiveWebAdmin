@@ -5,6 +5,10 @@ export const ItemContainer = styled.div`
   flex-direction: column;
   box-shadow: 3px 3px 7px gray;
   max-width: 40rem;
+
+  @media (max-width: 768px) {
+    max-width: 80%;
+  }
 `;
 
 export const TextBox = styled.div`

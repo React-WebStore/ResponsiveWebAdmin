@@ -1,6 +1,6 @@
 import React, { createContext, useReducer } from "react";
 import { uuidv4 } from "../../Utils";
-const initialState = { items: [], cart: [] };
+const initialState = { items: [], cart: [], preview: {} };
 export const contextState = createContext(initialState);
 const { Provider } = contextState;
 export const StateProvider = ({ children }) => {

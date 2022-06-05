@@ -13,8 +13,6 @@ const AddItem = ({ img = "logo192.png" }) => {
 
   const { dispatch } = useContext(contextState);
 
-  console.log({ title, price, category });
-
   return (
     <AddItemContainer
       onSubmit={(e) => {

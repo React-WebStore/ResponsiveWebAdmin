@@ -6,7 +6,7 @@ const PreviewItem = ({
   img = "https://firebasestorage.googleapis.com/v0/b/planup-d79a0.appspot.com/o/2016-09-06-what-is-a-product.webp?alt=media&token=f6c25a81-8f09-4401-b274-029baff6b96a",
 }) => {
   const { preview } = useContext(contextState);
-  const { title = "", price } = preview;
+  const { title = "", price = 0 } = preview;
 
   console.log({ preview });
   return (
