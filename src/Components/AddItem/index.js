@@ -20,13 +20,10 @@ const AddItem = ({ img = "logo192.png" }) => {
       onSubmit={(e) => {
         e.preventDefault();
 
-        const values = { title, price, category };
-
-        dispatch({ type: "previewItem", payload: values });
+        dispatch({ type: "previewItem", payload: { title, price, category } });
       }}
     >
       <input type="file" />
-      <UploadedImage src={img} alt="logo" />
       <label>Title</label>
       <Input type="text" onChange={(e) => setTitle(e.target.value)} />
       <Price setPrice={setPrice} />

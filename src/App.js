@@ -1,5 +1,6 @@
 import Login from "./Components/Login";
 import AddItem from "./Components/AddItem";
+import PreviewItem from "./Components/PreviewItem";
 const App = () => (
   <div
     style={{
@@ -10,6 +11,7 @@ const App = () => (
     }}
   >
     <AddItem />
+    <PreviewItem />
   </div>
 );
 
